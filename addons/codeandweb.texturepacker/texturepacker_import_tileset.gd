@@ -81,7 +81,7 @@ func _import(source_file, save_path, options, r_platform_variants, r_gen_files):
 	print("Importing tile set from "+source_file)
 
 	var sheets = read_sprite_sheet(source_file)
-	var sheetFolder = source_file.get_basename()+".sprites";
+	var sheetFolder = source_file.get_basename()+"_sprites";
 	create_folder(sheetFolder)
 
 	var fileName = "%s.%s" % [source_file.get_basename(), "res"]
