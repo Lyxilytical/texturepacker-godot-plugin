@@ -80,7 +80,7 @@ func _import(source_file, save_path, options, r_platform_variants, r_gen_files):
 	print("Importing sprite sheet from "+source_file);
 	
 	var sheets = read_sprite_sheet(source_file)
-	var sheetFolder = source_file.get_basename()+".sprites"
+	var sheetFolder = source_file.get_basename()+"_sprites"
 	create_folder(sheetFolder)
 		
 	for sheet in sheets.textures:
